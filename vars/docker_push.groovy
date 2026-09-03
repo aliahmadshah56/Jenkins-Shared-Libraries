@@ -17,7 +17,7 @@ def call(Map config = [:]) {
 
            # docker tag ${imageName}:${imageTag} \$DOCKER_USERNAME/${imageName}:${imageTag}
 
-            docker push \$DOCKER_USERNAME/${imageName}:${imageTag}
+            docker push ${imageName}:${imageTag}
         """
     }
 }
